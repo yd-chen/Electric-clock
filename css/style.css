@@ -1,0 +1,141 @@
+html,body{
+	margin: 0px;
+}
+.bg{
+	width: 1000px;
+	height: 604px;
+	background-image: url('../image./clock.jpg');
+	margin: 0px auto;
+	margin-top: 70px;
+	position: relative;
+}
+.group{
+	position: absolute;
+	left: 205px;
+	top: 230px;
+	/*opacity: 0.2;*/
+}
+.group:nth-child(2){
+	left: 295px;
+}
+.group:nth-child(3){
+	left: 405px;
+}
+.group:nth-child(4){
+	left: 495px;
+}
+.group:nth-child(5){
+	left: 605px;
+}
+.group:nth-child(6){
+	left: 695px;
+}
+
+.group div{
+	position: absolute;
+	width: 80px;
+	height: 10px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	opacity: 0.2;
+}
+.group div:nth-child(2){
+	transform: rotate(90deg) translate(35px, 35px);
+}
+.group div:nth-child(3){
+	transform: rotate(90deg) translate(35px, -35px);
+}
+.group div:nth-child(4){
+	transform: translate(0px, 70px);
+}
+.group div:nth-child(5){
+	transform: rotate(90deg) translate(105px, 35px);
+}
+.group div:nth-child(6){
+	transform: rotate(90deg) translate(105px, -35px);
+}
+.group div:nth-child(7){
+	transform: translate(0px, 140px);
+}
+.dots{
+	position: absolute;
+	left: 385px;
+	top:288px;
+}
+.dots:last-child{
+	left: 585px;
+}
+.dots div{
+	width: 10px;
+	height: 10px;
+	margin-top: 5px;
+	background-color: #ffffff;
+	border-radius: 100%;
+	opacity: 0.2;
+}
+.dots.active {
+	opacity: 1;
+}
+.zero div:nth-child(1),
+.zero div:nth-child(2),
+.zero div:nth-child(3),
+.zero div:nth-child(5),
+.zero div:nth-child(6),
+.zero div:nth-child(7) {
+	opacity: 1;
+}
+.one div:nth-child(3),
+.one div:nth-child(6) {
+	opacity: 1;
+}
+.two div:nth-child(1),
+.two div:nth-child(3),
+.two div:nth-child(4),
+.two div:nth-child(5),
+.two div:nth-child(7) {
+	opacity: 1;
+}
+.three div:nth-child(1),
+.three div:nth-child(3),
+.three div:nth-child(4),
+.three div:nth-child(6),
+.three div:nth-child(7) {
+	opacity: 1;
+}
+.four div:nth-child(2),
+.four div:nth-child(3),
+.four div:nth-child(4),
+.four div:nth-child(6) {
+	opacity: 1;
+}
+.five div:nth-child(1),
+.five div:nth-child(2),
+.five div:nth-child(4),
+.five div:nth-child(6),
+.five div:nth-child(7) {
+	opacity: 1;
+}
+.six div:nth-child(1),
+.six div:nth-child(2),
+.six div:nth-child(4),
+.six div:nth-child(5),
+.six div:nth-child(6),
+.six div:nth-child(7) {
+	opacity: 1;
+}
+.seven div:nth-child(1),
+.seven div:nth-child(3),
+.seven div:nth-child(6) {
+	opacity: 1;
+}
+.eight div {
+	opacity: 1;
+}
+.nine div:nth-child(1),
+.nine div:nth-child(2),
+.nine div:nth-child(3),
+.nine div:nth-child(4),
+.nine div:nth-child(6),
+.nine div:nth-child(7) {
+	opacity: 1;
+}

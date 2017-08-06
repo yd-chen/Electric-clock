@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Electronic clock</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="bg">
+		<div class="group">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="group">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="group">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="group">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="group">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="group">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="dots">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="dots">
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var arr = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+		var groups = document.getElementsByClassName('group');
+		var dots = document.getElementsByClassName('dots');
+
+		function setTime(hour, minute, second) {
+		for (var i = 0; i < groups.length; i++) {
+			for (var j = 0; j < arr.length; j++) {
+				groups[i].classList.remove(arr[j]);
+			}
+		}
+		for (var i = 0; i < dots.length; i++) {
+			dots[i].classList.toggle('active');
+		}
+		var hour1 = Math.floor(hour / 10);
+		groups[0].classList.add(arr[hour1]);
+		var hour2 = hour % 10;
+		groups[1].classList.add(arr[hour2]);
+		var minute1 = Math.floor(minute / 10);
+		groups[2].classList.add(arr[minute1]);
+		var minute2 = minute % 10;
+		groups[3].classList.add(arr[minute2]);
+		var second1 = Math.floor(second / 10);
+		groups[4].classList.add(arr[second1]);
+		var second2 = second % 10;
+		groups[5].classList.add(arr[second2]);
+		}
+
+		setInterval(function() {
+			var t = new Date();
+			setTime(t.getHours(), t.getMinutes(), t.getSeconds());
+		}, 500);
+</script>
+</body>
+</html>
