@@ -4,7 +4,7 @@ html,body{
 .bg{
 	width: 1000px;
 	height: 604px;
-	background-image: url('../image./clock.jpg');
+	background-image: url('../image/clock.jpg');
 	margin: 0px auto;
 	margin-top: 70px;
 	position: relative;
